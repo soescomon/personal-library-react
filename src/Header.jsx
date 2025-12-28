@@ -1,6 +1,5 @@
 export default function Header({name}) {
     return(
-        <h1 style={{color: "blueviolet"}}>{name}</h1>
+        <h1 style={{color: "#1b2b6cff"}}>{name}</h1>
     )
-
 }

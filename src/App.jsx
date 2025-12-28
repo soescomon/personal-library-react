@@ -1,12 +1,9 @@
-import ReadBooksList from "./ReadBooksList"
-
+import BookWrapper from "./BookWrapper"
 
 function App() {
 
-
   return (
-    <>
-    </>
+    <BookWrapper />
   )
 }
 
