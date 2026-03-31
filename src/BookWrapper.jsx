@@ -33,7 +33,7 @@ export default function BookWrapper() {
         alignItems: "center"   
 }}>
             <div style={{padding: "30px", borderRadius: "10px", width: "400px", display: "flex", flexDirection: "column",alignItems: "center", gap: "20px",}}>
-            <Header name="My libabry" />
+            <Header name="My library" />
             <FormInput values={values} setValues={setValues} addReadBook={addReadBook} addWishlist={addWishlist}/>
             <ReadBooksList readBooks={readBooks}/>
             <WishlistList wishlist={wishlist} moveToRead={moveToRead}/>
