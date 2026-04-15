@@ -1,16 +1,65 @@
-# React + Vite
+# My Library App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application that allows users to manage their personal library by adding books to a **Read List** or a **Wishlist**.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Add books with title and author
+- Save books into:
+  - Read Books list
+  -  Wishlist
+- Move books from Wishlist to Read Books
+- Reusable components (Button, Input, BookItem)
+- Dynamic rendering using `.map()`
+- State management with React Hooks (`useState`)
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React (with Vite)
+- JavaScript (ES6)
+- HTML & CSS (inline styling)
 
-## Expanding the ESLint configuration
+## Project Structure
+```bash
+src/
+│── App.jsx
+│── BookWrapper.jsx
+│── Button.jsx
+│── Input.jsx
+│── Header.jsx
+│── BookItem.jsx
+│── FormInput.jsx
+│── ReadBooksList.jsx
+│── WishlistList.jsx
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## How It Works
+
+- The app uses a main component (`BookWrapper`) to manage the global state.
+- Users input a book title and author.
+- Books can be added to either:
+  - Read Books list
+  - Wishlist
+- Wishlist items can be moved to the Read Books list.
+
+## How to Run
+
+1. Clone the repository:
+```bash
+   git clone https://github.com/soescomon/personal-library-react
+```
+
+2.  Navigate to the project folder:
+```bash
+cd personal-library-react
+```
+
+3. Install dependencies:
+```bash
+npm install
+```
+
+4. Run the app:
+```bash
+npm run dev
+```
